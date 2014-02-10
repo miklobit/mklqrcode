@@ -1,0 +1,512 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+    <sheets>
+      <sDEF>	
+	     <ROOT>
+	         <TCEforms>
+	             <sheetTitle>LLL:EXT:mklqrcode/lang/locallang_csh.xml:sheet.general</sheetTitle>
+	         </TCEforms>
+	         <type>array</type>
+	         <el>
+	             <qrCodeType>
+	                 <TCEforms>
+	                     <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrCodeType.label</label>
+	                     <config>
+	                         <type>select</type>
+	                         <items>
+	                             <numIndex index="0">
+	                                 <numIndex index="0">LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrCodeType.text</numIndex>
+	                                 <numIndex index="1">0</numIndex>
+	                             </numIndex>
+	                             <numIndex index="1">
+	                                 <numIndex index="0">LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrCodeType.url</numIndex>
+	                                 <numIndex index="1">1</numIndex>
+	                             </numIndex>
+	                             <numIndex index="2">
+	                                 <numIndex index="0">LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrCodeType.phone</numIndex>
+	                                 <numIndex index="1">2</numIndex>
+	                             </numIndex>
+	                             <numIndex index="3">
+	                                 <numIndex index="0">LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrCodeType.email</numIndex>
+	                                 <numIndex index="1">3</numIndex>
+	                             </numIndex>
+	                             <numIndex index="4">
+	                                 <numIndex index="0">LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrCodeType.vcard</numIndex>
+	                                 <numIndex index="1">4</numIndex>
+	                             </numIndex>
+	                             <numIndex index="5">
+	                                 <numIndex index="0">LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrCodeType.currentPage</numIndex>
+	                                 <numIndex index="1">5</numIndex>
+	                             </numIndex>
+	                         </items>
+	                         <maxitems>1</maxitems>
+	                         <size>1</size>
+	                         <default>0</default>
+	                     </config>
+	                     <onChange>reload</onChange>
+	                 </TCEforms>
+	             </qrCodeType>
+	             
+                 <qrCodeText>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrCodeText.label</label>
+                         <config>
+							<type>text</type>
+							<cols>50</cols>
+							<rows>20</rows>
+							<eval>trim</eval>
+						</config>
+                        <displayCond>FIELD:qrCodeType:IN:0,</displayCond>
+                     </TCEforms>
+                 </qrCodeText>
+                 	             
+                 <qrCodeUrl>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrCodeUrl.label</label>
+                         <config>
+							<type>input</type>
+							<size>255</size>
+							<max>255</max>
+							<eval>trim</eval>
+							<default>http://</default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:1</displayCond>
+                     </TCEforms>
+                 </qrCodeUrl>
+                                  	             
+                 <qrCodePhone>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrCodePhone.label</label>
+                         <config>
+							<type>input</type>
+							<size>255</size>
+							<max>255</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:2</displayCond>
+                     </TCEforms>
+                 </qrCodePhone>
+                                                   	             
+                 <qrCodeEmail>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrCodeEmail.label</label>
+                         <config>
+							<type>input</type>
+							<size>255</size>
+							<max>255</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:3</displayCond>
+                     </TCEforms>
+                 </qrCodeEmail>
+                 
+                 <vcardFirstName>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardFirstName</label>
+                         <config>
+							<type>input</type>
+							<size>25</size>
+							<max>50</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardFirstName>
+                 <vcardMiddleName>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardMiddleName</label>
+                         <config>
+							<type>input</type>
+							<size>25</size>
+							<max>50</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardMiddleName>
+                 <vcardLastName>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardLastName</label>
+                         <config>
+							<type>input</type>
+							<size>25</size>
+							<max>50</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardLastName>
+                 <vcardTitle>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardTitle</label>
+                         <config>
+							<type>input</type>
+							<size>10</size>
+							<max>25</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardTitle>
+                 <vcardBirthday>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardBirthday</label>
+                         <config>
+							<type>input</type>
+							<size>10</size>
+							<max>12</max>
+							<eval>date</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardBirthday>
+                 <vcardCompany>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardCompany</label>
+                         <config>
+							<type>input</type>
+							<size>100</size>
+							<max>100</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardCompany>
+                 <vcardDescription>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardDescription</label>
+                         <config>
+							<type>input</type>
+							<size>100</size>
+							<max>100</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardDescription>
+                 <vcardImage>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardImage</label>
+                         	<config type="array">
+							  <type>group</type>    
+							  <internal_type>file</internal_type>
+							  <allowed>jpg,gif,png</allowed>                   
+							  <max_size>2000</max_size>                 
+							  <uploadfolder>uploads/pics</uploadfolder>
+							  <show_thumbs>1</show_thumbs>
+							  <size>1</size>
+							  <minitems>0</minitems>
+							  <maxitems>1</maxitems>
+							</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardImage>
+                 <vcardStreet>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardStreet</label>
+                         <config>
+							<type>input</type>
+							<size>100</size>
+							<max>100</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardStreet>
+                 <vcardZip>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardZip</label>
+                         <config>
+							<type>input</type>
+							<size>10</size>
+							<max>10</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardZip>
+                 <vcardCity>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardCity</label>
+                         <config>
+							<type>input</type>
+							<size>35</size>
+							<max>50</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardCity>
+                 <vcardRegion>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardRegion</label>
+                         <config>
+							<type>input</type>
+							<size>100</size>
+							<max>100</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardRegion>
+                 <vcardCountry>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardCountry</label>
+                         <config>
+							<type>input</type>
+							<size>100</size>
+							<max>100</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardCountry>
+                 <vcardPhone>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardPhone</label>
+                         <config>
+							<type>input</type>
+							<size>50</size>
+							<max>50</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardPhone>
+                 <vcardFax>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardFax</label>
+                         <config>
+							<type>input</type>
+							<size>50</size>
+							<max>50</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardFax>
+                 <vcardMobile>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardMobile</label>
+                         <config>
+							<type>input</type>
+							<size>50</size>
+							<max>50</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardMobile>
+                 <vcardEmail>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardEmail</label>
+                         <config>
+							<type>input</type>
+							<size>100</size>
+							<max>100</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardEmail>
+                 <vcardWww>
+                     <TCEforms>
+                         <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:vcardWww</label>
+                         <config>
+							<type>input</type>
+							<size>100</size>
+							<max>100</max>
+							<eval>trim</eval>
+							<default></default>
+						</config>
+                        <displayCond>FIELD:qrCodeType:=:4</displayCond>
+                     </TCEforms>
+                 </vcardWww>
+	         </el>
+	     </ROOT>
+       </sDEF>
+       
+	   <sLAYOUT>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:mklqrcode/lang/locallang_csh.xml:sheet.layout</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+				    
+				    <qrcode.imageFormat>
+	                 	<TCEforms>
+		                     <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrcode.imageFormat.label</label>
+		                     <config>
+		                         <type>select</type>
+		                         <items>
+		                             <numIndex index="0">
+		                                 <numIndex index="0">LLL:EXT:mklqrcode/lang/locallang_csh.xml:imageFormat.option1</numIndex>
+		                                 <numIndex index="1">png</numIndex>
+		                             </numIndex>
+		                             <numIndex index="1">
+		                                 <numIndex index="0">LLL:EXT:mklqrcode/lang/locallang_csh.xml:imageFormat.option2</numIndex>
+		                                 <numIndex index="1">svg</numIndex>
+		                             </numIndex>
+		                             <numIndex index="2">
+		                                 <numIndex index="0">LLL:EXT:mklqrcode/lang/locallang_csh.xml:imageFormat.option3</numIndex>
+		                                 <numIndex index="1">eps</numIndex>
+		                             </numIndex>
+		                         </items>
+		                         <maxitems>1</maxitems>
+		                         <size>1</size>
+		                         <default>png</default>
+		                     </config>
+		                     <onChange>reload</onChange>
+	                 	</TCEforms>
+	             	</qrcode.imageFormat>
+
+				   <qrcode.codeSize>
+						<TCEforms>
+							<label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrcode.codeSize</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+								<max>1024</max>
+								<eval>trim,int</eval>
+								<default>100</default>
+							</config>
+		                    <displayCond>FIELD:qrcode.imageFormat:=:svg</displayCond>					
+						</TCEforms>
+					</qrcode.codeSize> 				    
+				    
+					<qrcode.fgColor>
+						<TCEforms>
+							<label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrcode.FGColor</label>
+							<config>
+								<type>input</type>
+								<size>6</size>
+								<wizards>
+									<color>
+										<type>colorbox</type>
+										<dim>16x16</dim>
+										<tableStyle>border:solid 1px black;</tableStyle>
+										<script>wizard_colorpicker.php</script>
+										<JSopenParams>height=340,width=360,status=0,menubar=0,scrollbars=1
+										</JSopenParams>
+									</color>
+								</wizards>
+								<default>#000000</default>
+							</config>
+						</TCEforms>
+					</qrcode.fgColor>		
+					
+					<qrcode.bgColor>
+						<TCEforms>
+							<label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrcode.BGColor</label>
+							<config>
+								<type>input</type>
+								<size>6</size>
+								<wizards>
+									<color>
+										<type>colorbox</type>
+										<dim>16x16</dim>
+										<tableStyle>border:solid 1px black;</tableStyle>
+										<script>wizard_colorpicker.php</script>
+										<JSopenParams>height=340,width=360,status=0,menubar=0,scrollbars=1
+										</JSopenParams>
+									</color>
+								</wizards>
+								<default>#FFFFFF</default>
+							</config>
+						</TCEforms>
+					</qrcode.bgColor>								    
+				    					    
+				   <qrcode.pixelSize>
+						<TCEforms>
+							<label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrcode.pixelSize</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<eval>trim,int</eval>
+								<default>2</default>
+							</config>
+						</TCEforms>
+					</qrcode.pixelSize> 
+					
+				   	<qrcode.enableBorder>
+						<TCEforms>
+							<label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrcode.enableBorder</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</qrcode.enableBorder>
+				   
+				    <qrcode.borderSize>
+						<TCEforms>
+							<label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:qrcode.borderSize</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<eval>trim,int</eval>
+								<default>2</default>
+							</config>
+						</TCEforms>
+					</qrcode.borderSize> 
+					
+				    <qrcode.errorCorrection>
+	                 	<TCEforms>
+		                     <label>LLL:EXT:mklqrcode/lang/locallang_csh.xml:errorCorrection.label</label>
+		                     <config>
+		                         <type>select</type>
+		                         <items>
+		                             <numIndex index="0">
+		                                 <numIndex index="0">LLL:EXT:mklqrcode/lang/locallang_csh.xml:errorCorrection.option1</numIndex>
+		                                 <numIndex index="1">L</numIndex>
+		                             </numIndex>
+		                             <numIndex index="1">
+		                                 <numIndex index="0">LLL:EXT:mklqrcode/lang/locallang_csh.xml:errorCorrection.option2</numIndex>
+		                                 <numIndex index="1">M</numIndex>
+		                             </numIndex>
+		                             <numIndex index="2">
+		                                 <numIndex index="0">LLL:EXT:mklqrcode/lang/locallang_csh.xml:errorCorrection.option3</numIndex>
+		                                 <numIndex index="1">Q</numIndex>
+		                             </numIndex>
+		                             <numIndex index="3">
+		                                 <numIndex index="0">LLL:EXT:mklqrcode/lang/locallang_csh.xml:errorCorrection.option4</numIndex>
+		                                 <numIndex index="1">H</numIndex>
+		                             </numIndex>
+		                         </items>
+		                         <maxitems>1</maxitems>
+		                         <size>1</size>
+		                         <default>L</default>
+		                     </config>
+	                 	</TCEforms>
+	             	</qrcode.errorCorrection>
+				</el>
+			</ROOT>
+		</sLAYOUT>
+				    
+				    	
+    </sheets>
+</T3DataStructure>
+                        

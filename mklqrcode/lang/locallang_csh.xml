@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>    
+	<data type="array">	
+	    
+		<languageKey index="default" type="array">
+			
+			<label index="tx_qrcode_pi1.title">QR-Code</label>			
+			<label index="sheet.general">set QR-Code data</label>
+			
+			<label index="qrCodeType.label">Select type of qr-code</label>
+			<label index="qrCodeType.text">Text</label>
+			<label index="qrCodeType.url">URL</label>
+			<label index="qrCodeType.phone">Phone</label>
+			<label index="qrCodeType.email">eMail</label>
+			<label index="qrCodeType.vcard">vCard</label>
+			<label index="qrCodeType.currentPage">current page url</label>
+					
+			<label index="sheet.layout">QR-Code layout</label>
+			
+			<label index="qrcode.imageFormat.label">Image format</label>
+			<label index="imageFormat.option1">png (raster)- default </label>
+			<label index="imageFormat.option2">svg (vector)</label>
+			<label index="imageFormat.option3">eps (vector)</label>		
+			<label index="qrcode.codeSize">Size of code image (pixels)</label>				
+			<label index="qrcode.FGColor">Foreground color</label>	
+			<label index="qrcode.BGColor">Background color</label>	
+			<label index="qrcode.pixelSize">size of each data pixel</label>
+			<label index="qrcode.enableBorder">enable border?</label>
+			<label index="qrcode.borderSize">border width factor (related to the data pixel size)</label>
+			
+			<label index="errorCorrection.label">Type of error correction</label>
+			<label index="errorCorrection.option1">Level: L (7%) - default </label>
+			<label index="errorCorrection.option2">Level: M (10%)</label>
+			<label index="errorCorrection.option3">Level: Q (25%)</label>
+			<label index="errorCorrection.option4">Level: H (30%)</label>
+			
+			<label index="qrCodeText.label">insert individuell text message</label>
+			<label index="qrCodeUrl.label">insert url</label>
+			<label index="qrCodePhone.label">insert phone number</label>
+			<label index="qrCodeEmail.label">insert email address</label>
+			
+			<label index="vcardFirstName">first name</label>
+			<label index="vcardMiddleName">middle name</label>
+			<label index="vcardLastName">last name</label>
+			<label index="vcardTitle">title</label>
+			<label index="vcardBirthday">birthday</label>
+			<label index="vcardCompany">company</label>
+			<label index="vcardDescription">description</label>
+			<label index="vcardImage">image</label>
+			<label index="vcardStreet">street</label>
+			<label index="vcardZip">zip</label>
+			<label index="vcardCity">city</label>
+			<label index="vcardRegion">region</label>
+			<label index="vcardCountry">country</label>
+			<label index="vcardPhone">phone</label>
+			<label index="vcardFax">fax</label>
+			<label index="vcardMobile">mobile</label>
+			<label index="vcardEmail">email</label>
+			<label index="vcardWww">website</label>
+						
+		</languageKey>
+	    
+		<languageKey index="de" type="array">
+		    
+			<label index="tx_qrcode_pi1.title">QR-Code</label>			
+			<label index="sheet.general">QR-Code Daten</label>
+			
+			<label index="qrCodeType.label">Wähle die Art des QR-Codes aus</label>
+			<label index="qrCodeType.text">Text</label>
+			<label index="qrCodeType.url">URL</label>
+			<label index="qrCodeType.phone">Telefon</label>
+			<label index="qrCodeType.email">E-Mail</label>
+			<label index="qrCodeType.vcard">vCard</label>
+			<label index="qrCodeType.currentPage">Adresse der aktuellen Seite</label>
+						
+			<label index="sheet.layout">QR-Code Layout</label>
+			
+			<label index="qrcode.pixelSize">Größe eine einzelnen Datenpixel (Standard: 2)</label>
+			<label index="qrcode.enableBorder">Rahmen um QR-Code setzen? (empfohlen!)</label>
+			<label index="qrcode.borderSize">Breite des Rahmens in Pixel (Standard: 2)</label>
+			
+			<label index="errorCorrection.label">Stufe der Fehlerkorrektur</label>
+			<label index="errorCorrection.option1">Stufe: L (7%) - Standard </label>
+			<label index="errorCorrection.option2">Stufe: M (10%)</label>
+			<label index="errorCorrection.option3">Stufe: Q (25%)</label>
+			<label index="errorCorrection.option4">Stufe: H (30%)</label>
+			
+			<label index="qrCodeText.label">Gebe eine individuelle Mitteilung ein</label>
+			<label index="qrCodeUrl.label">Gebe eine Webadresse ein</label>
+			<label index="qrCodePhone.label">Gebe eine Telefonnummer ein</label>
+			<label index="qrCodeEmail.label">Gebe eine E-Mail Adresse an</label>
+						
+			<label index="vcardFirstName">Vorname</label>
+			<label index="vcardMiddleName">Mittelname</label>
+			<label index="vcardLastName">Nachname</label>
+			<label index="vcardTitle">Titel</label>
+			<label index="vcardBirthday">Geburtstag</label>
+			<label index="vcardCompany">Firma</label>
+			<label index="vcardDescription">Funktion/Position</label>
+			<label index="vcardImage">Bild</label>
+			<label index="vcardStreet">Straße</label>
+			<label index="vcardZip">PLZ</label>
+			<label index="vcardCity">Stadt</label>
+			<label index="vcardRegion">Region/Staat/Bundesland</label>
+			<label index="vcardCountry">Land</label>
+			<label index="vcardPhone">Telefon</label>
+			<label index="vcardFax">Telefax</label>
+			<label index="vcardMobile">Mobile Rufnummer</label>
+			<label index="vcardEmail">E-Mail</label>
+			<label index="vcardWww">Webseite</label>
+						
+		</languageKey>
+		
+		
+	</data>
+</T3locallang>

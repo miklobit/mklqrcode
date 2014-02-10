@@ -1,0 +1,54 @@
+plugin.tx_mklqrcode_pi1 {
+
+
+
+# cat=plugin.tx_mklqrcode/dims/010; type=int+; label=LLL:EXT:mklqrcode/lang/locallang.xml:pixelSize.label
+pixelSizeVCard = 2
+# cat=plugin.tx_mklqrcode/dims/015; type=boolean; label=LLL:EXT:mklqrcode/lang/locallang.xml:enableBoder.label
+enableBorderVCard = 1
+# cat=plugin.tx_mklqrcode/dims/020; type=int+; label=LLL:EXT:mklqrcode/lang/locallang.xml:borderSize.label
+borderSizeVCard = 2
+
+
+
+# cat=plugin.tx_mklqrcode/enable/050; type=boolean; label=LLL:EXT:mklqrcode/lang/locallang.xml:enableOrganisation.label
+enableOrganisation = 1
+# cat=plugin.tx_mklqrcode/enable/055; type=boolean; label=LLL:EXT:mklqrcode/lang/locallang.xml:enableDescription.label
+enableDescription = 1
+# cat=plugin.tx_mklqrcode/enable/060; type=boolean; label=LLL:EXT:mklqrcode/lang/locallang.xml:enablePhone.label
+enablePhone = 1
+# cat=plugin.tx_mklqrcode/enable/065; type=boolean; label=LLL:EXT:mklqrcode/lang/locallang.xml:enableFax.label
+enableFax = 1
+# cat=plugin.tx_mklqrcode/enable/070; type=boolean; label=LLL:EXT:mklqrcode/lang/locallang.xml:enableCell.label
+enableCell = 1
+# cat=plugin.tx_mklqrcode/enable/075; type=boolean; label=LLL:EXT:mklqrcode/lang/locallang.xml:enableEmail.label
+enableEmail = 1
+# cat=plugin.tx_mklqrcode/enable/080; type=boolean; label=LLL:EXT:mklqrcode/lang/locallang.xml:enableImage.label
+enableImage = 1
+# cat=plugin.tx_mklqrcode/enable/085; type=boolean; label=LLL:EXT:mklqrcode/lang/locallang.xml:enableBirthday.label
+enableBirthday = 1
+# cat=plugin.tx_mklqrcode/enable/090; type=boolean; label=LLL:EXT:mklqrcode/lang/locallang.xml:enableUrl.label
+enableUrl = 1
+
+
+
+# cat=plugin.tx_mklqrcode/advanced/005; type=options[L,M,Q,H]; label=LLL:EXT:mklqrcode/lang/locallang.xml:errorCorrection.label
+errorCorrectionVCard = L
+
+# cat=plugin.tx_mklqrcode/advanced/010; type=string; label=LLL:EXT:mklqrcode/lang/locallang.xml:defaultAdrType.label
+defaultAdrType = intl,postal,parcel,work
+
+# cat=plugin.tx_mklqrcode/advanced/015; type=string; label=LLL:EXT:mklqrcode/lang/locallang.xml:defaultTelType.label
+defaultTelType = work,voice
+
+# cat=plugin.tx_mklqrcode/advanced/020; type=string; label=LLL:EXT:mklqrcode/lang/locallang.xml:defaultFaxType.label
+defaultFaxType = work,fax
+
+# cat=plugin.tx_mklqrcode/advanced/025; type=string; label=LLL:EXT:mklqrcode/lang/locallang.xml:defaultCellType.label
+defaultCellType = work,cell
+
+# cat=plugin.tx_mklqrcode/advanced/030; type=string; label=LLL:EXT:mklqrcode/lang/locallang.xml:defaultEmailType.label
+defaultEmailType = internet
+
+
+}

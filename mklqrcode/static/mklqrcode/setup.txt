@@ -1,0 +1,132 @@
+
+plugin.tx_mklqrcode_pi1 = USER
+plugin.tx_mklqrcode_pi1{
+	userFunc = user_mklqrcode_pi1->main	
+	
+	# define default png image ts configuration
+	qrcodePNG = IMAGE
+	qrcodePNG{
+		file =
+		altText.cObject = TEXT
+		altText.cObject.value = Scan QR Code			
+	}
+		
+	# define default svg image ts configuration
+	qrcodeSVG = SVG
+	qrcodeSVG{
+		src = 
+		width = 100
+		height = 100
+		noscript.cObject = TEXT
+		noscript.cObject.value = No SVG rendering possible, please use a browser.		
+	}		
+		
+	
+	# define ts to the vcard photo
+	mklqrcode.vcard.photo = IMG_RESOURCE
+	mklqrcode.vcard.photo{
+		file = GIFBUILDER
+		file{
+			XY = 64,64
+			format = jpg
+			quality = 90
+
+			10 = IMAGE
+			10.file.width = 64
+			10.offset = 0,64-[10.h]/2
+		}		
+	}
+	
+	qrCodeImageByTS = USER
+	qrCodeImageByTS{
+		userFunc = user_mklqrcode_pi1->getQrCodeByTS
+		userFunc{
+		    qrCodeString = TEXT
+		    qrCodeString{
+		      value = 
+		    }
+		    
+		    errorCorrection = L
+		    pixelSize = 5
+		    enableBorder = true
+		    borderSize = 10
+		  
+			# define IMAGE by rs reference
+			qrCodeImage = IMAGE
+			qrCodeImage{
+				file = 
+			}
+		}
+	}
+	
+	qrCodeImgResourceByTS = USER
+	qrCodeImgResourceByTS{
+		userFunc = user_mklqrcode_pi1->getQrCodeResourceByTS
+		userFunc{
+		    qrCodeString = TEXT
+		    qrCodeString{
+		      value = 
+		    }
+		    
+		    errorCorrection = L
+		    pixelSize = 5
+		    enableBorder = true
+		    borderSize = 10
+			
+			# define IMG_RESOURCE by ts reference
+			qrCodeImgResource = IMG_RESOURCE
+			qrCodeImgResource{
+				file = 
+			}
+		}
+	}
+}
+
+plugin.tx_ttaddress_pi1.templates.default.mklqrcode {
+	
+	vcard{
+		errorCorrection = {$plugin.tx_mklqrcode_pi1.errorCorrectionVCard}		
+		pixelSize = {$plugin.tx_mklqrcode_pi1.pixelSizeVCard}
+		enableBorder = {$plugin.tx_mklqrcode_pi1.enableBorderVCard}
+		borderSize = {$plugin.tx_mklqrcode_pi1.borderSizeVCard}
+		
+		enableFields{		
+			organisation = {$plugin.tx_mklqrcode_pi1.enableOrganisation}
+			description = {$plugin.tx_mklqrcode_pi1.enableDescription}
+			phone = {$plugin.tx_mklqrcode_pi1.enablePhone}
+			fax = {$plugin.tx_mklqrcode_pi1.enableFax}
+			cell = {$plugin.tx_mklqrcode_pi1.enableCell}
+			email = {$plugin.tx_mklqrcode_pi1.enableEmail}
+			image = {$plugin.tx_mklqrcode_pi1.enableImage}
+			birthday = {$plugin.tx_mklqrcode_pi1.enableBirthday}
+			url = {$plugin.tx_mklqrcode_pi1.enableUrl}
+		}
+		
+		fieldTypes{
+			adrType = {$plugin.tx_mklqrcode_pi1.defaultAdrType}
+			telType = {$plugin.tx_mklqrcode_pi1.defaultTelType}
+			faxType = {$plugin.tx_mklqrcode_pi1.defaultFaxType}
+			cellType = {$plugin.tx_mklqrcode_pi1.defaultCellType}
+			emailType = {$plugin.tx_mklqrcode_pi1.defaultEmailType}
+		}	
+		
+		photo = IMG_RESOURCE
+		photo{
+			file = GIFBUILDER
+			file{
+				XY = 64,64
+				format = jpg
+				quality = 90
+	
+				10 = IMAGE
+				10.file.width = 64
+				10.offset = 0,64-[10.h]/2
+			}		
+		}
+		
+		qrcode = IMAGE
+		qrcode{
+			file = 
+		}
+	}
+}

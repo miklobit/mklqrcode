@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>    
+	<data type="array">	
+	    
+		<languageKey index="default" type="array">
+			<label index="tx_qrcode_pi1.title">QR-Code</label>
+			
+			<label index="pixelSize.label">vCard: Pixel size (default: 2)</label>
+			<label index="enableBoder.label">vCard: Show Border?</label>
+			<label index="borderSize.label">vCard: Border width factor (default: 2 x pixel size)</label>
+			
+			<label index="enableOrganisation.label">Print organisation (tt_address)?</label>
+			<label index="enableDescription.label">Print title (tt_address)?</label>
+			<label index="enablePhone.label">Print phone (tt_address)?</label>
+			<label index="enableFax.label">Print fax (tt_address)?</label>
+			<label index="enableCell.label">Print cell (tt_address)?</label>
+			<label index="enableEmail.label">Print email (tt_address)?</label>
+			<label index="enableImage.label">Print image (tt_address)?</label>
+			<label index="enableBirthday.label">Print birthday (tt_address)?</label>
+			<label index="enableUrl.label">Print url (tt_address)?</label>
+			
+			<label index="errorCorrection.label">vCard: Level of error correction (L = lowest, H = highest)</label>
+			<label index="defaultAdrType.label">Define type of adr definition (default: "intl,postal,parcel,work")</label>
+			<label index="defaultTelType.label">Define type of phone number definition (f.e. work, voice, cell, home, msg, pref, fax)</label>
+			<label index="defaultFaxType.label">Define type of phone number definition (f.e. work, voice, cell, home, msg, pref, fax)</label>
+			<label index="defaultCellType.label">Define type of phone number definition (f.e. work, voice, cell, home, msg, pref, fax)</label>
+			<label index="defaultEmailType.label">Define type of email definition (f.e. internet, pref)</label>
+		</languageKey>
+	    
+		<languageKey index="de" type="array">			
+			<label index="pixelSize.label">vCard: Pixelgröße (std: 4)</label>
+			<label index="enableBoder.label">vCard: Rahmen erstellen?</label>
+			<label index="borderSize.label">vCard: Rahmenbreite als Faktor zur Datenpixelbreite (std: 2)</label>		    
+			
+			<label index="enableOrganisation.label">Ausgabe der Organisation (tt_address)?</label>
+			<label index="enableDescription.label">Ausgabe des Titels/Funktion (tt_address)?</label>
+			<label index="enablePhone.label">Ausgabe der Telefonnummer (tt_address)?</label>
+			<label index="enableFax.label">Ausgabe der Faxnummer (tt_address)?</label>
+			<label index="enableCell.label">Ausgabe der mobilen Telefonnummer (tt_address)?</label>
+			<label index="enableEmail.label">Ausgabe der E-Mail Adresse (tt_address)?</label>
+			<label index="enableImage.label">Ausgabe des Fotos (tt_address)?</label>
+			<label index="enableBirthday.label">Ausgabe des Geburtstages (tt_address)?</label>
+			<label index="enableUrl.label">Ausgabe der Webseiten-URL (tt_address)?</label>
+			
+			<label index="errorCorrection.label">vCard: Fehlerkorrekturstufe (L = niedrigste, H = höchste)</label>
+			<label index="defaultAdrType.label">Typdefinition zur Standardadressfelder (std.: "intl,postal,parcel,work")</label>
+			<label index="defaultTelType.label">Typdefinition zur Telefonnummer (bspw. work, voice, cell, home, msg, pref, fax)</label>
+			<label index="defaultFaxType.label">Typdefinition zur Faxnummer (bspw. work, voice, cell, home, msg, pref, fax)</label>
+			<label index="defaultCellType.label">Typdefinition zur Mobilfunknummer (bspw. work, voice, cell, home, msg, pref, fax)</label>
+			<label index="defaultCellType.label">Typdefinition zur E-Mail Adresse (bspw. pref, internet)</label>
+		</languageKey>
+		
+		
+	</data>
+</T3locallang>
